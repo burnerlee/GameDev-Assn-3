@@ -39,7 +39,9 @@ if(document.cookie.includes('highScorePlayer')){
   ctx2.drawImage(front, 0, 0, 250, 450, 140, 60, 20, 30);
   ctx1.drawImage(front, 0, 0, 250, 450, 140, 60, 20, 30);
   var refreshLeftPlayer=setInterval(function(){
-  
+    if(initialStamina1<0){
+      gameOver();
+    }
     switch (playerPositionLeft) {
     case "left":
     ctx1.drawImage(left, 0, 0, 250, 450, 140, 60, 20, 30);
@@ -60,7 +62,10 @@ if(document.cookie.includes('highScorePlayer')){
 allIntervals.push(refreshLeftPlayer);
   },10);
   var refreshRightPlayer=setInterval(function(){
-  switch (playerPositionRight) {
+    if(initialStamina2<0){
+      gameOver();
+    }
+    switch (playerPositionRight) {
     case "left":
     ctx2.drawImage(left, 0, 0, 250, 450, 140, 60, 20, 30);
     break;
