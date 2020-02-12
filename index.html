@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+<meta charset="utf-8">
+<title>jQuery load() Demo</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="JS/Cookies.js"></script>
+<script>
+$(document).ready(function(){
+
+    $("button").click(function(){
+        Cookies.set("currentPlayerName",document.getElementById("playerName").value);
+        if(document.cookie.includes('highScorePlayer')){
+    
+        }
+        else{
+            document.cookie="highScore=0";
+        }
+        $("body").load("game.html");
+      
+    });
+
+});
+
+</script>
+</head>
+<body>
+    Enter Your Name:
+    <br>
+    <br>
+    
+    <form action=""></form>
+    <input id="playerName" type="text" placeholder="Type Your Name">    
+    <button type="submit">Play The Game!!</button>
+    
+</form>
+</body>
+
+</html>

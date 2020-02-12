@@ -1,0 +1,82 @@
+body{
+  border:0;
+  margin:0;
+  padding:0;
+
+}
+
+.hiddent-images{
+  display: none;
+}
+canvas{
+  margin:0;
+  padding:0;
+  border:dashed 0.3vw #81f5ff;
+  height:100%;
+  width:50%;
+
+
+
+}
+#left-canvas{
+  background-color: #ffffdd;
+
+  }
+#right-canvas{
+  background-color: #ffd5e5;
+}
+.flexbox{
+  display: flex;
+  border:0;
+  margin:0
+  padding:0;
+  height:80%;
+
+}
+#div-up{
+  display:flex;
+  background-color: #81f5ff;
+  height:10%;
+  border:0;
+  margin:0;
+  padding:0;
+  font-size:2.5vw;
+  color:#ff7c7c;
+}
+#div-up span{
+width:33.3%;
+  margin-top: auto;
+  margin-bottom: auto;
+  }
+#score{
+  text-align: center;
+}
+#leftPlayerStamina{
+  text-align: left;
+  margin-left: 5%;;
+}
+#rightPlayerStamina{
+  text-align: right;
+  margin-right: 5%;;
+}
+#div-down{
+  display:flex;
+  background-color: #81f5ff;
+  height:10%;
+  border:0;
+  margin:0;
+  padding:0;
+  font-size:2.5vw;
+  color:#ff7c7c;
+  margin-top: .5%;
+  align-items: center;
+}
+#main{
+ display: flex;
+ flex-direction: column;
+ height: 100vh;
+}
+#div-down span{
+  text-align: center;
+  width: 50%;
+}
