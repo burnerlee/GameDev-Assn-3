@@ -1,0 +1,3 @@
+function playStaminaSound(){
+    staminaSound.play();
+  }
